@@ -32,12 +32,12 @@ components and minimal dependencies so it's easy to extend.
 - **Build tools**: `npm` / `node`
 
 **Quick Start**
-
+```
 1. Install dependencies
 
-```bash
+bash
 npm install
-```
+
 
 2. Run the development server
 
