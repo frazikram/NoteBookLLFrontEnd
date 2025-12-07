@@ -145,3 +145,13 @@ export function createNotebook(payload: {
     body: JSON.stringify(payload),
   });
 }
+export function createNote(
+  notebookId: string,
+  payload: { title: string; content: string }
+) {
+  return apiFetch<Note>(`/notebooks/${notebookId}/notes`, {
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
+}
+
